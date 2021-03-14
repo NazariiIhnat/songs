@@ -5,7 +5,9 @@ If votes = 0 thats means than song woun't be saved to database.
 Supported categories (Rock, Pop, Electronic, Country, Reggae, Polka, Hip hop, Classic).
 Firstly created Song entity and db conection using hibernate. Mapped this entity with db.
 Than created ability to correct red/write from/to files and application frame using jaxb and opencsv 
-libraries. Than created gui for comunicating with db and readers/writers. 
+libraries. Than created gui for comunicating with db and readers/writers. After that try to find bugs
+by using application and reading files with incorrect songs atributes and try to fix them. And finally
+build project to .jar and .bat files.
 Stack of technologies and lipraries:
 - Java 11
 - jaxb-core - 2.2.8-b01
