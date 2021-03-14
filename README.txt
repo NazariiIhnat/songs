@@ -1,7 +1,27 @@
 To launch the application double click on run.bat or target/songs-1.0-SNAPSHOT.jar files.
 This application provides grafic user interface (Swing library) 
 to read/write songs data(Title, Author, Album, Category, Votes) form/to .xml or .csv files;
+If votes = 0 thats means than song woun't be saved to database.
 Supported categories (Rock, Pop, Electronic, Country, Reggae, Polka, Hip hop, Classic).
+Firstly created Song entity and db conection using hibernate. Mapped this entity with db.
+Than created ability to correct red/write from/to files and application frame using jaxb and opencsv 
+libraries. Than created gui for comunicating with db and readers/writers. 
+Stack of technologies and lipraries:
+- Java 11
+- jaxb-core - 2.2.8-b01
+- jaxb-impl 2.2-promoted-b65
+- flatlaf - 0.23.1
+- spring-context - 5.3.4
+- hibernate-core - 5.4.17.Final
+- h2 - 1.4.200
+- commons-io - 2.6
+- opencsv - 5.3
+- maven-shade-plugin - 3.2.1
+- maven-compiler-plugin
+- Swing
+- Maven
+- Intellij IDEA
+- Eclipse window builder
 How to use---------------------------------------------------------------------------------
 After first execution the embedded H2 database file (songs.mv.db) will be generated,
 where will be stored all songs values.
@@ -34,13 +54,6 @@ appropriate format in file, that you choose or new file. The value of file will 
 6. Clear all votes.
 By clicking on "Clear all votes" button you will nullify votes of all saved (not shown) songs.
 ------------------------------------------------------------------------------------------------------
-Stack of technologies:
-- Java 11
-- H2 database with Hibernate
-- Maven - for build
-- Swing - for GUI
-- Jaxb, opencsv and commons-io - for xml and csv parsing
----------------------------------------------------------------------------------------------------
 Created by Nazarii Ihnat
 
 
