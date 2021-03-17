@@ -12,7 +12,7 @@ import java.util.List;
 
 public class SongDAOImpl implements SongDAO{
 
-    private SessionFactory sessionFactory = HibernateUtils.getSessionFactory();
+    private SessionFactory sessionFactory;
 
     @Override
     public Song get(String title, String author, String album) {
@@ -117,5 +117,13 @@ public class SongDAOImpl implements SongDAO{
         transaction.commit();
         session.close();
         return list;
+    }
+
+    public SessionFactory getSessionFactory() {
+        return sessionFactory;
+    }
+
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
     }
 }

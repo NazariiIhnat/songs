@@ -1,6 +1,7 @@
 package gui;
 
 import com.formdev.flatlaf.FlatDarkLaf;
+import dao.HibernateUtils;
 import dao.SongDAOImpl;
 import entity.Category;
 import entity.Song;
@@ -25,6 +26,8 @@ public class MainFrame extends JFrame{
     private SongCategoryComboBox categoryComboBox;
 
     public MainFrame() {
+        songDAO = new SongDAOImpl();
+        songDAO.setSessionFactory(HibernateUtils.getSessionFactory());
         setLookAndFeel();
         init();
         List<Song> songs = songDAO.getAll();
@@ -42,7 +45,6 @@ public class MainFrame extends JFrame{
     }
 
     private void init() {
-        songDAO = new SongDAOImpl();
         fileChooser = new FileChooser();
         songWriter = new SongWriterImpl();
         reportDialog = new ReportDialog(this, "Report", true);
