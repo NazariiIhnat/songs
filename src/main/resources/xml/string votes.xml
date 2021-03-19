@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<songs>
+    <song>
+        <title>Nothing else matters</title>
+        <author>Metallica</author>
+        <album>Metallica</album>
+        <category>Rock</category>
+        <votes>one two three</votes>
+    </song>
+</songs>

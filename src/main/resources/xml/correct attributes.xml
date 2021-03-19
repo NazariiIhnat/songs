@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<songs>
+    <song>
+        <title>Nothing else matters</title>
+        <author>Metallica</author>
+        <album>Metallica</album>
+        <category>Rock</category>
+        <votes>15487</votes>
+    </song>
+    <song>
+        <title>Levels</title>
+        <author>Avicci</author>
+        <album>Levels</album>
+        <category>Electronic</category>
+        <votes>23784</votes>
+    </song>
+    <song>
+        <title>I Drive Your Truck</title>
+        <author>Lee Brice</author>
+        <album>Hard 2 Love</album>
+        <category>Country</category>
+        <votes>9587</votes>
+    </song>
+</songs>
