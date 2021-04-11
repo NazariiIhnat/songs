@@ -11,8 +11,8 @@ import java.util.List;
 public class SongReaderImplTest {
 
     private static SongReader songReader = new SongReaderImpl();
-    private static final String xmlForTestsFolderPath = "src/main/resources/test/";
-    private StringBuilder stringBuilder = new StringBuilder(xmlForTestsFolderPath);
+    private static final String folderWithTestFiles = "src/main/resources/test/";
+    private StringBuilder stringBuilder = new StringBuilder(folderWithTestFiles);
 
     private File getFile(String fileName){
         stringBuilder.append(fileName);
